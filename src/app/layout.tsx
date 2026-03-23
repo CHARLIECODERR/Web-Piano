@@ -14,7 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Web Piano | Interactive Browser Instrument",
-  description: "Play a fully interactive 2-octave diatonic piano right in your browser.",
+  description:
+    "Play a fully interactive 2-octave diatonic piano right in your browser.",
+  verification: {
+    google: "OFLCzZvv51ynqqSnk98_lBxoBZAP7NrvQBbfpSX0PIc",
+  },
 };
 
 export default function RootLayout({
@@ -29,6 +33,8 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         {children}
+
+        {/* Google Ads Script */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
